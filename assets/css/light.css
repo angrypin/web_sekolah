@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+.ui.popup {
+	overflow:auto;
+}
+
+.custom.top, .custom.top .right {
+	background: transparent!important;
+}
+
+.custom.top .item {
+	color: white!important;
+}
+
+.ui.sidebar .item, .ui.right .item, .ui.table thead th, .ui.table tfoot th {
+	text-transform: uppercase;
+}
+
+#home {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#home h1 {
+	color: white;
+	font-family: 'Lemonada', cursive;
+	font-size: 2rem;
+}
+
+#home, #fasilitas, #kelas, #prestasi {
+	min-height: 100vh;
+	padding: 6rem 0;
+}
+
+#fasilitas h2, #kelas h2, #prestasi h2 {
+	text-transform: capitalize;
+}
+
+.ui.basic.modal .ui.table {
+	color: inherit;
+}

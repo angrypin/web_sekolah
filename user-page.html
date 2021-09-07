@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMKN 420 Bumi Timur ( MitiM )</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Angrypin aka _Reduce">
+	<meta name="description" content="website sekolah made with hand by Angrypin aka _Reduce">
+	<meta name="robots" content="all,index,follow">
+	<meta name="copyright" content="&copy; 2021 Angrypin aka _Reduce">
+	<meta name="creator" content="Angrypin aka _Reduce">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="assets/images/logo.png">
+	<meta property="og:title" content="SMKN 420 Bumi Timur ( MitiM )">
+
+	<link rel="icon" href="assets/images/logo.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/light.css">
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/semantic.min.js"></script>
+	<script type="text/javascript" src="assets/js/library/jquery.serialize-object.min.js"></script>
+	<script type="text/javascript" src="assets/js/library/tablesort.js"></script>
+</head>
+<body>
+<div class="ui sidebar menu right vertical right aligned segment list-menu">
+	<a class="item theme-changer">
+		<i class="sun icon"></i>
+		light theme
+	</a>
+	<a href="#user" class="item">user</a>
+	<a href="#fasilitas" class="item">fasilitas</a>
+	<a href="#kelas" class="item">kelas</a>
+	<a href="#prestasi" class="item">prestasi</a>
+</div>
+<div class="pusher">
+	<div class="ui grid">
+		<div class="computer only row">
+			<div class="column">
+				<div class="ui fixed secondary menu custom top">
+					<a href="#home" class="header item">
+						<img src="assets/images/logo.png">
+						SMKn 420 MitiM					</a>
+					<div class="ui secondary right menu list-menu">
+						<a class="ui item theme-changer">
+							<i class="sun icon"></i>
+							light theme
+						</a>
+						<a href="#user" class="item">user</a>
+						<a href="#fasilitas" class="item">fasilitas</a>
+						<a href="#kelas" class="item">kelas</a>
+						<a href="#prestasi" class="item">prestasi</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tablet mobile only row">
+			<div class="column">
+				<div class="ui fixed secondary menu custom top">
+					<a href="#home" class="header item">
+						<img src="assets/images/logo.png">
+						SMKn 420 MitiM					</a>
+					<div class="ui right secondary menu">
+						<div class="item" id="my-btn">
+							<i class="content icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="home">
+		<h1>SMKn 420 MitiM</h1>
+	</div>
+	<div id="user-page">
+		<div class="ui longer modal" id="user">
+			<i class="close icon"></i>
+			<div class="header">
+				Informasi user
+			</div>
+			<div class="ui scrolling image content">
+				<div class="ui medium image">
+					<img src="assets/images/profile.png">
+				</div>
+				<div class="description">
+					<table class="ui very basic very compact unstackable table">
+						<tbody>
+							<tr>
+								<td>Nama</td>
+								<td>:</td>
+								<td>M. Arifin Ilham</td>
+							</tr>
+							<tr>
+								<td>Kelas</td>
+								<td>:</td>
+								<td>XI RPL 1</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="actions">
+      <div class="ui red ok button">
+        logout
+      </div>
+    </div>
+		</div>
+	</div>
+	<div class="ui inverted text container">
+		<div id="fasilitas">
+			<h2>fasilitas</h2>
+			<table class="ui very compact celled striped unstackable selectable sortable center aligned table">
+				<thead>
+					<tr>
+						<th>nama</th>
+						<th>jumlah</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span data-content="tempat riset ilmiah, eksperimen, pengukuran ataupun pelatihan ilmiah yang berhubungan dengan ilmu komputer dan memiliki beberapa komputer dalam satu jaringan untuk penggunaan oleh kalangan tertentu.">Lab. Komputer</span></td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td><span data-content="Tempat untuk mengadakan percobaan, penyelidikan, eksperimen, pengukuran ataupun pelatihan ilmiah dan sebagainya yang berhubungan dengan ilmu fisika, kimia, dan biologi atau bidang ilmu lain.">Lab. IPA</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td><span data-content="Sebuah koleksi besar buku dan majalah yang dibiayai dan dioperasikan oleh sebuah kota atau institusi, serta dimanfaatkan oleh masyarakat yang rata-rata tidak mampu membeli sekian banyak buku dengan biaya sendiri.">Perpustakaan</span></td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td><span data-content="Ruangan, tempat atau rumah kecil menyerupai masjid yang digunakan sebagai tempat salat dan mengaji bagi umat Islam.">Mushola</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td><span data-content=" tempat untuk melakukan semua kegiatan baik upacara, olahraga, maupun kegiatan-kegiatan sekolah yang lain">lapangan</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td><span data-content="ruang terbuka hijau yang bisa membuat suasana belajar menjadi lebih menyenangkan karena suasananya yang asri.">Taman</span></td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td><span data-content="Ruangan dalam sebuah gedung umum yang dapat digunakan pengunjungnya untuk makan, baik makanan yang dibawa sendiri maupun yang dibeli di sana.">Kantin</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td><span data-content="koperasi yang didirikan di lingkungan sekolah yang anggota-anggotanya terdiri atas siswa sekolah.">Koperasi</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td><span data-content="ruangan besar yang dapat digunakan untuk rapat, upacara, dan sebagainya">gedung aula</span></td>
+						<td>1</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Total</th>
+						<th>21</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div id="kelas">
+			<h2>kelas</h2>
+			<table class="ui very compact celled striped unstackable selectable sortable center aligned table">
+				<thead>
+					<tr>
+						<th>kelas</th>
+						<th class="sorted ascending">jurusan</th>
+						<th>jumlah</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Rekayasa Perangkat Lunak">RPL</span></td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Rekayasa Perangkat Lunak">RPL</span></td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Rekayasa Perangkat Lunak">RPL</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Teknik Komputer dan Jaringan">TKJ</span></td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Teknik Komputer dan Jaringan">TKJ</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Teknik Komputer dan Jaringan">TKJ</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Akuntansi dan Keuangan Lembaga">AK</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Akuntansi dan Keuangan Lembaga">AK</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Akuntansi dan Keuangan Lembaga">AK</span></td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Akomodasi Perhotelan">AP</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Akomodasi Perhotelan">AP</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Akomodasi Perhotelan">AP</span></td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Multi Media">MM</span></td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Multi Media">MM</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Multi Media">MM</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Perbankan">PBK</span></td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Perbankan">PBK</span></td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Perbankan">PBK</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Pemasaran">PM</span></td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Pemasaran">PM</span></td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Pemasaran">PM</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>X</td>
+						<td><span data-content="Usaha Perjalanan Wisata">UPW</span></td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>XI</td>
+						<td><span data-content="Usaha Perjalanan Wisata">UPW</span></td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>XII</td>
+						<td><span data-content="Usaha Perjalanan Wisata">UPW</span></td>
+						<td>2</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="2">Total</th>
+						<th>55</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div id="prestasi">
+			<h2>prestasi</h2>
+			<table class="ui very compact celled striped selectable sortable center aligned table">
+				<thead>
+					<tr>
+						<th>tahun</th>
+						<th>nama</th>
+						<th>penghargaan</th>
+						<th>peringkat</th>
+						<th>jenis</th>
+						<th>tingkat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2011</td>
+						<td>KARATE</td>
+						<td>KEJURDA KUSHINRYU M KARATE-DO INDONESIA(KKI)</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2011</td>
+						<td>KARATE</td>
+						<td>KEJUARAAN KARATE RADEN INTAN CUP III</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Kab/kota</td>
+					</tr>
+					<tr>
+						<td>2012</td>
+						<td>SELEKSI TIMNAS</td>
+						<td>H.M TAUFIQ KIEMAS</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Nasional</td>
+					</tr>
+					<tr>
+						<td>2012</td>
+						<td>SELEKSI TIMNAS</td>
+						<td>H.M TAUFIQ KIEMAS</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Nasional</td>
+					</tr>
+					<tr>
+						<td>2012</td>
+						<td>PENCAK SILAT</td>
+						<td>-</td>
+						<td>1</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2013</td>
+						<td>KARATE</td>
+						<td>KEJURDA KARATE CHAMPHIONS GUBERNUR CUP III</td>
+						<td>1</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2013</td>
+						<td>KARATE</td>
+						<td>KEJURDA KUSHINRYU M KARATE-DO INDONESIA(KKI)</td>
+						<td>1</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2013</td>
+						<td>SENAM RITMIK GYMNASTIK</td>
+						<td>SURABAYA</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Nasional</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>PERSADA FAIR 2014 BASKETBALL PUTRI</td>
+						<td>PEERSADA FAIR 2014</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>FOURTEN CUP BASKET BALL COMPETITIOS 2015</td>
+						<td>SMAN 14 BANDAR LAMPUNG</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>GLORY COMPETITIONS OF SUDIRMAN 41</td>
+						<td>SMAN 1 BANDAR LAMPUNG</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>PBB</td>
+						<td>SMP PERINTIS</td>
+						<td>1</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>KEJUARAAN TERBUKA TAEKWONDO SABURAI CUP</td>
+						<td>KOTA BANDAR LAMPUNG</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>PENTAS SENI GLOCS 41</td>
+						<td>SMAN 1 BANDAR LAMPUNG</td>
+						<td>3</td>
+						<td>Seni</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>BASKETBALL PERSADA FAIR 2014</td>
+						<td>SMK PERSADA BANDAR LAMPUNG</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>FOURTEEN CUP BASKET BALL COMPETITION</td>
+						<td>SMAN 14 BANDAR LAMPUNG</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2014</td>
+						<td>KARATE</td>
+						<td>FORKI L.A CUP II</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>KARATE</td>
+						<td>KEJURDA KARATE CHAMPHIONS WALIKOTA CUP</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>BASKETBALL COMPETITION 2015 FOR JUNIOR</td>
+						<td>SMA YP UNILA</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>KARATE</td>
+						<td>KEJURDA KARATE CHAMPHIONS GUBERNUR CUP V</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>KARATE</td>
+						<td>KEJURDA KARATE CHAMPHIONS WALIKOTA CUP</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Propinsi</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>KOMPETISI FUTSAL PEMUDA TEKNOKRAT</td>
+						<td>PERGURUAN TINGGI TEKNOKRAT</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Kab/kota</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>TEKNOKTAR BASKETBALL COMPETITION 2015</td>
+						<td>PERGURUAN TINGGI TEKNOKRAT</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Kab/kota</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>BASKETBALL COMPETITION 2015 FOR JUNIOR</td>
+						<td>SMA YP UNILA BANDAR LAMPUNG</td>
+						<td>3</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2015</td>
+						<td>PERSADA FAIR 2014 BASKETBALL PUTRI</td>
+						<td>PEERSADA FAIR 2015</td>
+						<td>2</td>
+						<td>Olahraga</td>
+						<td>Sekolah</td>
+					</tr>
+					<tr>
+						<td>2016</td>
+						<td>KCCK IBI DARMAJAYA</td>
+						<td>IBI DARMAJAYA</td>
+						<td>3</td>
+						<td>Lain-lain</td>
+						<td>Kab/kota</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>tahun</th>
+						<th>nama</th>
+						<th>penghargaan</th>
+						<th>peringkat</th>
+						<th>jenis</th>
+						<th>tingkat</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="ui inverted vertical footer segment">
+	<div class="ui inverted section divider"></div>
+	<div class="ui center aligned container">
+		<div class="ui stackable inverted divided equal width grid">
+			<div class="column">
+				<h4 class="ui inverted header">
+					Profile
+				</h4>
+				<div class="ui inverted link list">
+					<a href="#fasilitas" class="item">fasilitas</a>
+					<a href="#kelas" class="item">kelas</a>
+					<a href="#prestasi" class="item">prestasi</a>
+				</div>
+			</div>
+			<div class="column">
+				<h4 class="ui inverted header">
+					Author
+				</h4>
+				<div class="ui inverted list">
+					<span class="item">M. Arifin Ilham</span>
+					<span class="item">XI RPL 1</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui center aligned container">
+		<div class="ui inverted section divider"></div>
+		<img src="assets/images/logo.png" class="ui centered mini image">
+		<div class="ui horizontal inverted small divided link list">
+			<a href="#fasilitas" class="item">fasilitas</a>
+			<a href="#kelas" class="item">kelas</a>
+			<a href="#prestasi" class="item">prestasi</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	let userPage = '#user', dark;
+	const nameRegex = /^[A-Za-z0-9_\-]+$/;
+</script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>

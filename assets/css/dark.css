@@ -1,0 +1,39 @@
+body {
+	color: white;
+}
+
+body.pushable>.pusher {
+	background: #1b1c1d;
+}
+
+.ui.inverted.menu .item:hover, .ui.inverted.menu .item:active {
+	background: #00b5ad!important;
+}
+
+.ui.inverted.dimmer {
+	background: rgba(0,0,0,.85);
+}
+
+.ui.menu .item:before {
+	width: 0;
+}
+
+.ui.form .field>label, .ui.form input {
+	color: inherit!important;
+}
+
+.ui.form input {
+	background: inherit!important;
+	border: 1px solid white!important;
+}
+
+.ui.form .field .prompt.label {
+	background: transparent!important;
+	border: 1px solid #ff0000!important;
+	color: #ff0500!important;
+}
+
+.ui.form .field.error input {
+	border-color: #c51515!important;
+  color: #ff7370!important;
+}
