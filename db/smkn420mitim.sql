@@ -8,7 +8,7 @@ CREATE DATABASE IF NOT EXISTS `smkn420mitim` CHARACTER SET utf8mb4 COLLATE utf8m
 -- table structure for table `user`
 -- 
 
-CREATE TABLE `users` (
+CREATE TABLE `smkn420mitim`.`users` (
 	`id` int(1) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`username` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
 	`password` char(72) NOT NULL
@@ -19,14 +19,14 @@ CREATE TABLE `users` (
 -- 
 -- password: J$}R1#+l#`QIRgI9d|p3
 
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
+INSERT INTO `smkn420mitim`.`users` (`id`, `username`, `password`) VALUES
 (NULL, 'angrypin', '$2y$10$wnpu39hSbj4GiPNfHXlh6.ml9xybsFU8EU3axIdreOJFLZ3M7ZLJW');
 
 -- 
 -- table structure for table `list_majors`
 -- 
 
-CREATE TABLE `list_majors` (
+CREATE TABLE `smkn420mitim`.`list_majors` (
 	`id` int(2) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`short_name` char(5) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
 	`long_name` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
@@ -36,7 +36,7 @@ CREATE TABLE `list_majors` (
 -- Data for table `list_majors`
 -- 
 
-INSERT INTO `list_majors` (`id`, `short_name`, `long_name`) VALUES
+INSERT INTO `smkn420mitim`.`list_majors` (`id`, `short_name`, `long_name`) VALUES
 (NULL, 'RPL', 'Rekayasa Perangkat Lunak'),
 (NULL, 'TKJ', 'Teknik Komputer dan Jaringan'),
 (NULL, 'AK', 'Akuntansi dan Keuangan Lembaga'),
@@ -50,7 +50,7 @@ INSERT INTO `list_majors` (`id`, `short_name`, `long_name`) VALUES
 -- table structure for table `fasilities`
 -- 
 
-CREATE TABLE `fasilities` (
+CREATE TABLE `smkn420mitim`.`fasilities` (
 	`id` int(1) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
 	`description` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE `fasilities` (
 -- Data for table `fasilities`
 -- 
 
-INSERT INTO `fasilities` (`id`, `name`, `description`, `total`) VALUES
+INSERT INTO `smkn420mitim`.`fasilities` (`id`, `name`, `description`, `total`) VALUES
 (NULL, 'Lab. Komputer', 'tempat riset ilmiah, eksperimen, pengukuran ataupun pelatihan ilmiah yang berhubungan dengan ilmu komputer dan memiliki beberapa komputer dalam satu jaringan untuk penggunaan oleh kalangan tertentu.', 5),
 (NULL, 'Lab. IPA', 'Tempat untuk mengadakan percobaan, penyelidikan, eksperimen, pengukuran ataupun pelatihan ilmiah dan sebagainya yang berhubungan dengan ilmu fisika, kimia, dan biologi atau bidang ilmu lain.', 2),
 (NULL, 'Perpustakaan', 'Sebuah koleksi besar buku dan majalah yang dibiayai dan dioperasikan oleh sebuah kota atau institusi, serta dimanfaatkan oleh masyarakat yang rata-rata tidak mampu membeli sekian banyak buku dengan biaya sendiri.', 3),
@@ -76,7 +76,7 @@ INSERT INTO `fasilities` (`id`, `name`, `description`, `total`) VALUES
 -- table structure for table `classes`
 -- 
 
-CREATE TABLE `classes` (
+CREATE TABLE `smkn420mitim`.`classes` (
 	`id` int(1) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`class` char(3) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
 	`major_id` int(2) NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE `classes` (
 -- Data for table `classes`
 -- 
 
-INSERT INTO `classes` (`id`, `class`, `major_id`, `total`) VALUES
+INSERT INTO `smkn420mitim`.`classes` (`id`, `class`, `major_id`, `total`) VALUES
 (NULL, 'X', 1, 4),
 (NULL, 'X', 2, 4),
 (NULL, 'X', 3, 2),
@@ -118,7 +118,7 @@ INSERT INTO `classes` (`id`, `class`, `major_id`, `total`) VALUES
 -- table structure for table `achievements`
 -- 
 
-CREATE TABLE `achievements` (
+CREATE TABLE `smkn420mitim`.`achievements` (
 	`id` int(3) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`year` year NOT NULL,
 	`name` varchar(40) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
