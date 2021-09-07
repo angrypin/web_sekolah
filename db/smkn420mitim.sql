@@ -134,7 +134,7 @@ CREATE TABLE `achievements` (
 -- source: http://sekolah.data.kemdikbud.go.id/index.php/chome/profil/08d9e915-d51a-442a-a904-5deb681d4e22
 -- 
 
-INSERT INTO `achievements` (`id`, `year`, `name`, `award`, `rank`, `type`, `level`) VALUES
+INSERT INTO `smkn420mitim`.`achievements` (`id`, `year`, `name`, `award`, `rank`, `type`, `level`) VALUES
 (NULL, 2011, 'KARATE', 'KEJURDA KUSHINRYU M KARATE-DO INDONESIA(KKI)', 2, 'Olahraga', 'Propinsi'),
 (NULL, 2011, 'KARATE', 'KEJUARAAN KARATE RADEN INTAN CUP III', 3, 'Olahraga', 'Kab/kota'),
 (NULL, 2012, 'SELEKSI TIMNAS', 'H.M TAUFIQ KIEMAS', 2, 'Olahraga', 'Nasional'),
